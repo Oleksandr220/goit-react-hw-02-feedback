@@ -1,0 +1,12 @@
+.button__container {
+  padding-left: 10px;
+}
+
+.feedback__button {
+  padding: 5px 15px;
+  font-size: 26px;
+  margin-right: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: silver;
+}
