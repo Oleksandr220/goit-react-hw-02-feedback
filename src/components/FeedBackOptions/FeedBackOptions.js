@@ -8,7 +8,7 @@ const feedbackComponents = ({ options, changeFeedback }) => {
       {options.map(option => (
         <button
           className="feedback__button"
-          onClick={changeFeedback}
+          onClick={() => changeFeedback(option)}
           key={option.toString()}
         >
           {option}

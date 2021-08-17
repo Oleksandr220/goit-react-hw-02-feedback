@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.feedback__container {
+  margin: 30px;
+  padding: 20px;
+  width: 400px;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.feedback__title {
+  font-size: 42px;
+  text-align: center;
+}
