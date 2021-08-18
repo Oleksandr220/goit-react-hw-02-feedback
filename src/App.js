@@ -11,16 +11,22 @@ class App extends Component {
     bad: 0,
   };
 
+  // changeFeedback = feedBack => {
+  //   const arrayState = Object.keys(this.state);
+  //   arrayState.forEach(el => {
+  //     if (el === feedBack.toLowerCase()) {
+  //       this.setState(prevState => ({
+  //         [el]: prevState[el] + 1,
+  //       }));
+  //       return;
+  //     }
+  //   });
+  // };
+
   changeFeedback = feedBack => {
-    const arrayState = Object.keys(this.state);
-    arrayState.forEach(el => {
-      if (el === feedBack.toLowerCase()) {
-        this.setState(prevState => ({
-          [el]: prevState[el] + 1,
-        }));
-        return;
-      }
-    });
+    this.setState(prevState => ({
+      [feedBack]: prevState[feedBack] + 1,
+    }));
   };
 
   countTotalFeedback = () => {
